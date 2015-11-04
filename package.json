@@ -1,0 +1,29 @@
+{
+  "name": "podio-component",
+  "version": "1.0.0",
+  "description": "Podio API integration component template for elastic.io platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elasticio/podio-component.git"
+  },
+  "keywords": [
+    "podio",
+    "elastic.io",
+    "api",
+    "ipaas"
+  ],
+  "author": "elastic.io GmbH",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/elasticio/podio-component/issues"
+  },
+  "homepage": "https://github.com/elasticio/podio-component#readme",
+  "dependencies": {
+    "elasticio-node": "0.0.7",
+    "elasticio-sailor-nodejs": "^1.0.1"
+  }
+}
