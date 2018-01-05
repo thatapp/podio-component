@@ -4,7 +4,7 @@
   "description": "Podio API integration component template for elastic.io platform",
   "main": "index.js",
   "scripts": {
-    "pretest": "node_modules/.bin/eslint lib spec spec-integration --ext .json --ext .js --fix",
+    "pretest": "node_modules/.bin/eslint verifyCredentials.js lib spec spec-integration --ext .json --ext .js --fix",
     "test": "NODE_ENV=test mocha spec/*",
     "integration-test": "NODE_ENV=test mocha spec-integration/*"
   },
@@ -44,6 +44,9 @@
   },
   "eslintConfig": {
     "extends": "xo-space",
+    "plugins": [
+      "json"
+    ],
     "env": {
       "mocha": true
     }
