@@ -1,6 +1,6 @@
 {
-    "title": "Podio",
-    "desctiprion": "Podio",
+    "title": "Podio [BETA]",
+    "desctiprion": "Connectivity to the Podio",
     "credentials": {
         "fields":{
             "oauth":{
@@ -16,61 +16,12 @@
             "token_uri": "https://podio.com/oauth/token"
         }
     },
-    "actions": {
-        "createItem": {
-            "main": "./lib/actions/createItem.js",
-            "title": "Create Item",
-            "fields": {
-                "appId": {
-                    "viewClass": "SelectView",
-                    "prompt": "Select an Application",
-                    "label": "Podio Application",
-                    "required": false,
-                    "model": "getApplications"
-                },
-                "spaceId": {
-                    "viewClass": "SelectView",
-                    "prompt": "Select a Space",
-                    "label": "Podio Space",
-                    "required": true,
-                    "model": "getSpaces"
-                }
-            },
-            "dynamicMetadata": true
-        },
-        "createOrganization": {
-            "main": "./lib/actions/createOrganization.js",
-            "title": "Create Organization",
-            "metadata": {
-                "in": "./lib/schemas/createOrganization.in.json",
-                "out": "./lib/schemas/createOrganization.out.json"
-            }
-        },
-        "createReminder": {
-            "main": "./lib/actions/createReminder.js",
-            "title": "Create Reminder",
-            "metadata": {
-                "in": "./lib/schemas/createReminder.in.json",
-                "out": "./lib/schemas/createReminder.out.json"
-            }
-        },
-        "createTask": {
-            "main": "./lib/actions/createTask.js",
-            "title": "Create Task",
-            "metadata": {
-                "in": "./lib/schemas/createTask.in.json",
-                "out": "./lib/schemas/createTask.out.json"
-            }
-        }
-    },
     "triggers": {
         "getContacts": {
             "main": "./lib/triggers/getContacts.js",
-            "title": "Get Contacts",
-            "type" : "polling",
-            "metadata": {
-                "out": "./lib/schemas/getContacts.out.json"
-            }
+            "title": "All Contacts",
+            "description": "Fetches all available contacts, no deduplication or change detection",
+            "type" : "polling"
         }
     }
 }
