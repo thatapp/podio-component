@@ -17,8 +17,6 @@ More information you can find [here](https://developers.podio.com/authentication
 
 In the component repository you need to specify OAuth Client credentials as environment variables. You would need two variables
 
-![image](https://cloud.githubusercontent.com/assets/56208/10132996/4de54eac-65da-11e5-92aa-a8b102d633e5.png)
-
 You would need two variables:
  * ```PODIO_CLIENT_KEY``` - your OAuth client key
  * ```PODIO_CLIENT_SECRET``` - your OAUth client secret
