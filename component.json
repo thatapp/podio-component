@@ -1,6 +1,7 @@
 {
     "title": "Podio",
-    "desctiprion": "Podio",
+    "description": "Podio",
+    "envVars": { },
     "credentials": {
         "fields":{
             "oauth":{
@@ -14,6 +15,16 @@
             "client_secret": "4OjMH5sRf46OkwbKQHuLSdMkDKCKk7VOJWGRSyiQnsCHOHCcKRJYSnk27qnMg9oq",
             "auth_uri": "https://podio.com/oauth/authorize",
             "token_uri": "https://podio.com/oauth/token"
+        }
+    },
+"triggers": {
+        "getContacts": {
+            "main": "./lib/triggers/getContacts.js",
+            "title": "Get Contacts",
+            "type" : "polling",
+            "metadata": {
+                "out": "./lib/schemas/getContacts.out.json"
+            }
         }
     },
     "actions": {
@@ -61,16 +72,7 @@
                 "in": "./lib/schemas/createTask.in.json",
                 "out": "./lib/schemas/createTask.out.json"
             }
-        }
-    },
-    "triggers": {
-        "getContacts": {
-            "main": "./lib/triggers/getContacts.js",
-            "title": "Get Contacts",
-            "type" : "polling",
-            "metadata": {
-                "out": "./lib/schemas/getContacts.out.json"
-            }
-        }
+        },
+        "fields": { }
     }
 }
