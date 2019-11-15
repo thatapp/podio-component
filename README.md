@@ -1,17 +1,16 @@
 # podio-component
-Podio API component for elastic.io platform
+Podio API component for thatapp.io platform
 
-## Create new App in Podio
+## Podio Authentication
 
 In order to make OAuth work you need a new App in your Podio. During app creation process you will be asked to specify
-the callback URL, to process OAuth auehtncation via elastic.io platform your callback URL should be 
+the callback URL, to process OAuth authentication via thatapp.io platform your callback URL should be 
 
 ```
-https://your-tenant.elastic.io/callback/oauth2
+https://your-tenant.io/callback/oauth2
 ```
 
 More information you can find [here](https://developers.podio.com/authentication)
-
 
 ## Configure OAuth Client key/secret
 
