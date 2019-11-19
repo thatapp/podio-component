@@ -11,8 +11,8 @@
             }
         },
         "oauth2":{
-            "client_id": "AVA",
-            "client_secret": "4OjMH5sRf46OkwbKQHuLSdMkDKCKk7VOJWGRSyiQnsCHOHCcKRJYSnk27qnMg9oq",
+            "client_id": "{{PODIO_APP_ID}}",
+            "client_secret": "{{PODIO_APP_SECRET}}",
             "auth_uri": "https://podio.com/oauth/authorize",
             "token_uri": "https://podio.com/oauth/token"
         }
